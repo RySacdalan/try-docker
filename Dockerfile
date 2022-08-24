@@ -2,9 +2,9 @@ FROM python:3.10.5
 
 WORKDIR /fastapi-app
 
-COPY dependency.txt .
+COPY requirements.txt .
 
-RUN pip install -r dependency.txt
+RUN pip install -r requirements.txt
 
 COPY ./app ./app
 
